@@ -87,14 +87,33 @@
                     <view key="view" contentMode="scaleToFill" id="sKr-cS-eI7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checkout Cart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyj-15-Na2">
+                                <rect key="frame" x="115" y="100" width="184" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D71-h4-bh2">
+                                <rect key="frame" x="122" y="664" width="170" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="Checkout"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8Co-Qu-VWu"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Checkout" id="Qi9-Ml-j16"/>
+                    <connections>
+                        <outlet property="cart" destination="Tyj-15-Na2" id="9jA-zG-xSC"/>
+                        <outlet property="checkout" destination="D71-h4-bh2" id="kOk-Rh-f4J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDX-1R-U7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="223"/>
+            <point key="canvasLocation" x="1131.8840579710145" y="222.99107142857142"/>
         </scene>
         <!--Menu-->
         <scene sceneID="czi-Ck-PPp">
@@ -104,110 +123,132 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k9A-ET-atY">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k5y-M2-Dqc">
-                                        <rect key="frame" x="8" y="0.0" width="398" height="1176"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <string key="text">                                                                                                                                                     R                                                                                Regular         Super
-MACARONI &amp; CHEESE - Homemade               6.49           9.99
-ONION RINGS                                                   4.99                       9.49
-FRIES                                                                   3.99                     7.49
-CHEESE FRIES - Kraft cheese whiz                  4.75                      8.99
-OLD BAY FRIES                                                  4.49                      8.49
-CURLEY FRIES                                                   4.49                      8.49
-PIZZA FRIES - Pizza sauce &amp; mozarella cheese   6.99                 9.49
-DISCO FRIES - American cheese &amp; gravy
-6.99
-       9.49
-GRAVY FRIES
-4.49
-       8.49
-MOZZARELLA FRIES
-6.49
-       9.49
-ZILLY FRIES - Bacon and ranch mozzarella fries
-7.99
-      10.99
-BUFFALO MOZZARELLA FRIES - Wing sauce &amp; mozzarella cheese with a side of bleu cheese
-7.49
-      10.49
-SWEET POTATO FRIES
-4.99
-      8.99
-CHILI CHEESE FRIES
-N/A
-      7.49
-MOZZARELLA STICKS
-5.25 (5)
-      9.95                              (10)
-CHICKEN FINGERS - With bbq, sweet &amp; sour or honey mustard sauce or buffalo sauce
-6.49 (5)
-11.99 (10)
-BUFFALO CHICKEN FINGERS - Dipped in wing sauce, choice of blue cheese or ranch
-7.00 (5)
-12.99 (10)
-PLATTER - 3 CHICKEN FINGERS, FRIES &amp; COLE SLAW
-N/A
-8.49
-MAC &amp; CHEESE BITES
-5.49 (5)
-10.49   (10)
-GARLIC BREAD
-4.45
-5.45 With cheese
-PIZZA BREAD - Full Italian roll
-N/A
-5.99
-POTATO SKINS - Choice of mozzarella or cheese whiz
-Add sour cream 50¢ Add Bacon $1.00
-N/A
-6.49
-PIZZA POTATO SKINS - With mozzarella &amp; pizza sauce
-N/A
-6.99
-JALAPENO POPPERS - With a side of marinara
-N/A
-5.49   (5)
-BROCCOLI BITES
-N/A
-7.49   (10)
-NACHOS - Served with chips &amp; cheese whiz
-N/A
-7.49
-NACHOS SUPREME - Lettuce, tomato, onion, black olives, jalapenos &amp; sour cream with side of cheese whiz &amp; salsa
-N/A
-10.49
-NACHOS SUPREME with CHICKEN or BEEF
-N/A
-13.99
-BREAD STICKS - With a side of marinara sauce
-N/A
-4.50   (3)
-</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="hio-Td-lKm"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="8wC-Vg-Vle"/>
-                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1h-tz-FTf">
+                                <rect key="frame" x="173" y="77" width="69" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zilly Fries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiQ-dz-RsY">
+                                <rect key="frame" x="56" y="150" width="73" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mac Bites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5g-4Q-e7B">
+                                <rect key="frame" x="56" y="200" width="76" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buffalo Wings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pO3-Ym-fHz">
+                                <rect key="frame" x="56" y="250" width="107" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Potato Skins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QF-3H-7d7">
+                                <rect key="frame" x="56" y="300" width="96" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Milkshake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rY-gw-ELZ">
+                                <rect key="frame" x="56" y="350" width="76" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAu-6x-Tj4">
+                                <rect key="frame" x="56" y="400" width="69" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chicken Fingers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6N-in-NvG">
+                                <rect key="frame" x="56" y="450" width="123" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fat Cat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8L-Sq-R9r">
+                                <rect key="frame" x="56" y="500" width="69" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hub-16-O5n">
+                                <rect key="frame" x="250" y="150" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$7.99"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3Q-0n-emC">
+                                <rect key="frame" x="250" y="200" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$5.49"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQw-sp-NtU">
+                                <rect key="frame" x="250" y="250" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$5.45"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm0-0z-Zl9">
+                                <rect key="frame" x="250" y="300" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$6.49"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ey1-M3-N7e">
+                                <rect key="frame" x="250" y="350" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$5.25"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOh-CI-Ww1">
+                                <rect key="frame" x="250" y="400" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$8.49"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbn-Gs-zDK">
+                                <rect key="frame" x="250" y="450" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$6.49"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPa-ks-Icy">
+                                <rect key="frame" x="250" y="500" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$9.99"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="k9A-ET-atY" firstAttribute="top" secondItem="9E0-E5-BHA" secondAttribute="top" constant="134" id="1wS-7O-h5r"/>
-                            <constraint firstAttribute="trailing" secondItem="k9A-ET-atY" secondAttribute="trailing" constant="75" id="Ct4-LV-S4J"/>
-                            <constraint firstItem="k9A-ET-atY" firstAttribute="leading" secondItem="9E0-E5-BHA" secondAttribute="leading" constant="99" id="CtW-GA-fT9"/>
-                            <constraint firstAttribute="bottom" secondItem="k9A-ET-atY" secondAttribute="bottom" constant="314" id="mNY-gv-XER"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gkE-A7-fag"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu" id="FqE-JE-qDl"/>
                     <connections>
-                        <outlet property="menulist" destination="k5y-M2-Dqc" id="Xct-bk-tYC"/>
+                        <outlet property="but1" destination="hub-16-O5n" id="TuP-Th-Un4"/>
+                        <outlet property="but2" destination="D3Q-0n-emC" id="jAH-ei-AUf"/>
+                        <outlet property="but3" destination="uQw-sp-NtU" id="G4c-Ta-WTo"/>
+                        <outlet property="but4" destination="Cm0-0z-Zl9" id="a20-lH-uFS"/>
+                        <outlet property="but5" destination="ey1-M3-N7e" id="Q0F-Yt-xbS"/>
+                        <outlet property="but6" destination="AOh-CI-Ww1" id="rwS-HZ-yD2"/>
+                        <outlet property="but7" destination="jbn-Gs-zDK" id="1C0-4N-4tl"/>
+                        <outlet property="but8" destination="kPa-ks-Icy" id="XJm-ml-NdV"/>
+                        <outlet property="fav" destination="K1h-tz-FTf" id="i2X-Vg-pNb"/>
+                        <outlet property="fav1" destination="hiQ-dz-RsY" id="ydo-mQ-ras"/>
+                        <outlet property="fav2" destination="h5g-4Q-e7B" id="NfT-b4-yft"/>
+                        <outlet property="fav3" destination="pO3-Ym-fHz" id="jR7-gU-MbH"/>
+                        <outlet property="fav4" destination="9QF-3H-7d7" id="z8S-Ul-csI"/>
+                        <outlet property="fav5" destination="2rY-gw-ELZ" id="KWc-BN-QYL"/>
+                        <outlet property="fav6" destination="hAu-6x-Tj4" id="zhw-aj-dT5"/>
+                        <outlet property="fav7" destination="b6N-in-NvG" id="ibQ-U6-mkW"/>
+                        <outlet property="fav8" destination="e8L-Sq-R9r" id="O3p-Ax-Bh3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dem-6I-Le3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
